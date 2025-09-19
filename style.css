@@ -1,0 +1,22 @@
+/* Minimal, validator-friendly CSS */
+:root { --max: 60ch; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  background: #f9fafb;
+}
+main {
+  width: min(90vw, var(--max));
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+h1 { letter-spacing: .06em; margin: 0 0 .5rem; }
+.quote { font-style: italic; margin: 0; }
